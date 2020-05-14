@@ -4,7 +4,7 @@ import {Navbar, Nav } from 'react-bootstrap'
 
 const MainNavbar = () => {
     return (
-        <Navbar expand="lg" variant="dark" bg="dark" className="position-sticky">
+        <Navbar expand="lg" variant="dark" bg="dark" sticky="top">
             <Navbar.Brand href="#">
                 <img 
                     src="https://uploads-ssl.webflow.com/5e8f60e580e03809212616c0/5e8f7785a438dd067c019495_Webp.net-resizeimage.png"

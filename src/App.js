@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import MainNavbar from "./Containers/MainNavbar.js"
 import WelcomeSection from "./Containers/WelcomeSection"
+import WelcomeJumbo from "./Containers/WelcomeJumbo"
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 class App extends Component {
@@ -12,6 +14,7 @@ class App extends Component {
       <div className="App">
         <MainNavbar />
         <WelcomeSection />
+        <WelcomeJumbo/>
       </div>
     );
   }
