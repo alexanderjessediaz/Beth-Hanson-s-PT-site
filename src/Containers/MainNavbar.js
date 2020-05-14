@@ -1,6 +1,6 @@
 import React from 'react'
 import {Navbar, Nav } from 'react-bootstrap'
-import "../Styling/MainNavbar.css"
+
 
 const MainNavbar = () => {
     return (
@@ -16,7 +16,7 @@ const MainNavbar = () => {
             <Nav className="mr-auto">
                 <Nav.Link href="#">Instg</Nav.Link>
             </Nav>
-            <Nav inline className="mr-sm-2">
+            <Nav className="mr-sm-2">
                 <Nav.Link href="#" >Home</Nav.Link>
                 <Nav.Link href="#">About</Nav.Link>
                 <Nav.Link href="#">Contact</Nav.Link>
