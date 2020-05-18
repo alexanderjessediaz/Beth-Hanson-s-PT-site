@@ -1,8 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import MainNavbar from "./Containers/MainNavbar.js"
 import WelcomeSection from "./Containers/WelcomeSection"
 import WelcomeJumbo from "./Containers/WelcomeJumbo"
-import 'bootstrap/dist/css/bootstrap.min.css';
+import ServicesContainer from "./Containers/ServicesContainer"
+import FAQDivide from "./Containers/FAQDivide"
+import ServicesDivide from "./Containers/ServicesDivide"
+import ContactDivide from "./Containers/ContactDivide"
+import Contact from "./Containers/Contact"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 
@@ -15,6 +20,11 @@ class App extends Component {
         <MainNavbar />
         <WelcomeSection />
         <WelcomeJumbo/>
+        <ServicesDivide/>
+        <ServicesContainer/>
+        <ContactDivide/>
+        <Contact/>
+        <FAQDivide/>
       </div>
     );
   }

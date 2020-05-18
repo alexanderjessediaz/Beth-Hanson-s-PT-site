@@ -13,6 +13,7 @@ const WelcomeJumbo = () => {
                         height={300}
                         width={450}
                         className="align-self-center mr-3"
+                        
                         alt="welcomepicture"
                         />
                 <Media.Body>
