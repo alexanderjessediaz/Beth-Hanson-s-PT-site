@@ -6,11 +6,21 @@ import Form from 'react-bootstrap/Form'
 class ModalComponent extends Component {
 
 state = {
-  showHide: false
+  showHide: false,
+  name:"",
+  email:"",
+  message:""
+
 }
 
 handleModalShowHide() {
   this.setState({ showHide: !this.state.showHide })
+}
+
+handleChange = (event) => {
+  this.setState({
+    [event.target.name]: event.target.value
+  })
 }
 
 render(){
@@ -28,15 +38,34 @@ render(){
                 <Form>
                   <Form.Group>
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type="name" label="name"/>
+                    <Form.Control
+                      type="name"
+                      name="name"
+                      label="name"
+                      value={this.state.name}
+                      onChange={this.handleChange}
+                      />
                   </Form.Group>
                   <Form.Group>
                     <Form.Label>Email</Form.Label>
-                    <Form.Control type="name" label="email"/>
+                    <Form.Control
+                      type="email"
+                      name="email"
+                      label="email" 
+                      value={this.state.email}
+                      onChange={this.handleChange}
+                      />
                   </Form.Group>
                   <Form.Group>
                     <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows="5"label="message"/>
+                    <Form.Control
+                    name="message" 
+                    as="textarea"
+                    rows="5"
+                    label="message"
+                    value={this.state.message}
+                    onChange={this.handleChange}
+                    />
                   </Form.Group>
                 </Form>
               </Modal.Body>
