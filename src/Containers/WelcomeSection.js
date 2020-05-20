@@ -21,16 +21,14 @@ const WelcomeSection = () => {
                             </Card.Text>
                             <Card.Text>
                                 smaller text smaller text smaller text smaller text smaller text smaller text smaller text 
-                            </Card.Text><Card.Text>
-                                smaller text smaller text smaller text smaller text smaller text smaller text smaller text 
-                            </Card.Text><Card.Text>
-                                smaller text smaller text smaller text smaller text smaller text smaller text smaller text 
-                            </Card.Text><Card.Text>
+                            </Card.Text>
+                            <Card.Text>
                                 smaller text smaller text smaller text smaller text smaller text smaller text smaller text 
                             </Card.Text>
                             <Card.Text>
-                                 smaller text smaller text smaller text smaller text smaller text smaller text 
+                                smaller text smaller text smaller text smaller text smaller text smaller text smaller text 
                             </Card.Text>
+                            
                             <Card.Link href="#">Link</Card.Link>
                         </Card.Body>
                     </Card>

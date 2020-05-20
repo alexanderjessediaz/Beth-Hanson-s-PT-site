@@ -7,6 +7,7 @@ import FAQDivide from "./Containers/FAQDivide"
 import ServicesDivide from "./Containers/ServicesDivide"
 import ContactDivide from "./Containers/ContactDivide"
 import Contact from "./Containers/Contact"
+import FAQ from "./Containers/FAQ"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
@@ -25,6 +26,7 @@ class App extends Component {
         <ContactDivide/>
         <Contact/>
         <FAQDivide/>
+        <FAQ/>
       </div>
     );
   }
