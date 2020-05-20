@@ -1,39 +1,22 @@
 import React from  'react'
 import Container from 'react-bootstrap/Container'
-import Card from 'react-bootstrap/Card'
 import Carousel from 'react-bootstrap/Carousel'
 import Row  from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import BethLogo from '../Images/BethLogo.png'
+import { Media } from 'react-bootstrap'
 
 
 const WelcomeSection = () => {
     return (
-        <Container className="d-flex justify-content">
-            <Row>
-                <Col md={7}>
-                    <Card>
-                        <Card.Header as="h1" >Bold Text</Card.Header>
-                        <Card.Body>
-                            <Card.Title>Title</Card.Title>
-                            <Card.Subtitle>Subtitle</Card.Subtitle>
-                            <Card.Text>
-                                smaller text smaller text smaller text smaller text smaller text smaller text smaller text 
-                            </Card.Text>
-                            <Card.Text>
-                                smaller text smaller text smaller text smaller text smaller text smaller text smaller text 
-                            </Card.Text>
-                            <Card.Text>
-                                smaller text smaller text smaller text smaller text smaller text smaller text smaller text 
-                            </Card.Text>
-                            <Card.Text>
-                                smaller text smaller text smaller text smaller text smaller text smaller text smaller text 
-                            </Card.Text>
-                            
-                            <Card.Link href="#">Link</Card.Link>
-                        </Card.Body>
-                    </Card>
+        <Container>
+            <Row className="d-flex align-items-center">
+                <Col>
+                    <Media>
+                        <img alt="" src={BethLogo}/>
+                    </Media>
                 </Col>
-                <Col md={5}>
+                <Col>
                     <Carousel >
                         <Carousel.Item>
                             <img

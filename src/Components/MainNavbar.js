@@ -1,26 +1,24 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav' 
+import Nav from 'react-bootstrap/Nav'
+import Instagram from '../Images/Instagram.png'
+import BethNavLogo from '../Images/BethNavLogo.png'
 
 
 const MainNavbar = () => {
     return (
-        <Navbar expand="lg" variant="dark" bg="dark" sticky="top">
+        <Navbar expand="lg" variant="light" bg="light" sticky="top">
             <Navbar.Brand href="#">
-                <img 
-                    src="https://uploads-ssl.webflow.com/5e8f60e580e03809212616c0/5e8f7785a438dd067c019495_Webp.net-resizeimage.png"
-                    width="30"
-                    height="30"
-                    alt="Logo"
-                />
+                <img alt='' src={BethNavLogo}/>
             </Navbar.Brand>
             <Nav className="mr-auto">
-                <Nav.Link href="#">Instg</Nav.Link>
+            <Nav.Link href="#"><img src={Instagram} alt="instagram"/></Nav.Link>
             </Nav>
             <Nav className="mr-sm-2">
                 <Nav.Link href="#" >Home</Nav.Link>
                 <Nav.Link href="#">About</Nav.Link>
                 <Nav.Link href="#">Contact</Nav.Link>
+                <Nav.Link href="#">Services</Nav.Link>
                 <Nav.Link href="#">FAQ</Nav.Link>
             </Nav>
         </Navbar>

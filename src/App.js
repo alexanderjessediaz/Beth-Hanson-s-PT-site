@@ -1,14 +1,19 @@
 import React, { Component } from 'react'
-import MainNavbar from "./Containers/MainNavbar.js"
-import WelcomeSection from "./Containers/WelcomeSection"
-import WelcomeJumbo from "./Containers/WelcomeJumbo"
-import ServicesContainer from "./Containers/ServicesContainer"
-import FAQDivide from "./Containers/FAQDivide"
-import ServicesDivide from "./Containers/ServicesDivide"
-import ContactDivide from "./Containers/ContactDivide"
-import Contact from "./Containers/Contact"
-import FAQ from "./Containers/FAQ"
+import MainNavbar from "./Components/MainNavbar.js"
+import WelcomeSection from "./Components/WelcomeSection"
+import WelcomeJumbo from "./Components/WelcomeJumbo"
+import ServicesContainer from "./Components/ServicesContainer"
+import ServicesDivide from "./Components/ServicesDivide"
+import ContactDivide from "./Components/ContactDivide"
+import Contact from "./Components/Contact"
+import FAQDivide from "./Components/FAQDivide"
+import FAQ from "./Components/FAQ"
+
+
 import 'bootstrap/dist/css/bootstrap.min.css'
+// import { library } from '@fortawesome/fontawesome-svg-core'
+// import { fab } from '@fortawesome/free-brands-svg-icons'
+// library.add(fab)
 
 
 
