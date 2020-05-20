@@ -4,21 +4,18 @@ import WelcomeSection from "./Components/WelcomeSection"
 import WelcomeJumbo from "./Components/WelcomeJumbo"
 import ServicesContainer from "./Components/ServicesContainer"
 import ServicesDivide from "./Components/ServicesDivide"
-import ContactDivide from "./Components/ContactDivide"
-import Contact from "./Components/Contact"
+import ModalComponent from "./Components/ModalComponent"
+// import Contact from "./Components/Contact"
 import FAQDivide from "./Components/FAQDivide"
 import FAQ from "./Components/FAQ"
 
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { fab } from '@fortawesome/free-brands-svg-icons'
-// library.add(fab)
+
 
 
 
 class App extends Component {
-
 
   render(){
     return (
@@ -28,8 +25,7 @@ class App extends Component {
         <WelcomeJumbo/>
         <ServicesDivide/>
         <ServicesContainer/>
-        <ContactDivide/>
-        <Contact/>
+        <ModalComponent/>
         <FAQDivide/>
         <FAQ/>
       </div>
