@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Button,Modal } from 'react-bootstrap'
-
+import Button from 'react-bootstrap/Button'
+import Modal from 'react-bootstrap/Modal'
+import Form from 'react-bootstrap/Form'
 
 class ModalComponent extends Component {
 
@@ -16,24 +17,38 @@ render(){
   return(
       <div>
           <Button variant="primary" onClick={() => this.handleModalShowHide()}>
-              Launch demo modal
+              Contact Me
           </Button>
 
           <Modal show={this.state.showHide}>
               <Modal.Header closeButton onClick={() => this.handleModalShowHide()}>
-              <Modal.Title>Modal heading</Modal.Title>
+              <Modal.Title>Can't wait to hear from you</Modal.Title>
               </Modal.Header>
-              <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+              <Modal.Body>
+                <Form>
+                  <Form.Group>
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control type="name" label="name"/>
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control type="name" label="email"/>
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Label>Message</Form.Label>
+                    <Form.Control as="textarea" rows="5"label="message"/>
+                  </Form.Group>
+                </Form>
+              </Modal.Body>
               <Modal.Footer>
               <Button variant="secondary" onClick={() => this.handleModalShowHide()}>
                   Close
               </Button>
               <Button variant="primary" onClick={() => this.handleModalShowHide()}>
-                  Save Changes
+                  Send Message
               </Button>
               </Modal.Footer>
           </Modal>
-
       </div>
     )
   }
