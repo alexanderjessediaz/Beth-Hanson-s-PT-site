@@ -7,7 +7,7 @@ const FAQ = () => {
     return (
         <CardDeck>
             <Card bg="secondary" text="light">
-                <Card.Header >Q: "I’ve never worked with a personal trainer before. What should I expect?"</Card.Header>
+                <Card.Header >Q:<br/> "I’ve never worked with a personal trainer before. What should I expect?"</Card.Header>
                 <Card.Body>
                     <blockquote className="blockquote mb-0">
                         <p>
@@ -22,7 +22,7 @@ const FAQ = () => {
                 </Card.Body>
             </Card>
             <Card bg="success" text="light">
-                <Card.Header>Q: "What is your movement philosophy?"</Card.Header>
+                <Card.Header>Q:<br/> "What is your movement philosophy?"</Card.Header>
                 <Card.Body>
                     <blockquote className="blockquote mb-0">
                         <p>
@@ -37,7 +37,7 @@ const FAQ = () => {
                 </Card.Body>
             </Card>
             <Card bg="secondary" text="light">
-                <Card.Header>Q: "What is Kinstretch?"</Card.Header>
+                <Card.Header>Q:<br/> "What is Kinstretch?"</Card.Header>
                 <Card.Body>
                     <blockquote className="blockquote mb-0">
                         <p>
@@ -54,7 +54,7 @@ const FAQ = () => {
                 </Card.Body>
             </Card>
             <Card bg="success" text="light">
-                <Card.Header>Q: "How much do you charge?"</Card.Header>
+                <Card.Header>Q:<br/> "How much do you charge?"</Card.Header>
                 <Card.Body>
                     <blockquote className="blockquote mb-0">
                         <p>
