@@ -17,6 +17,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 class App extends Component {
 
+
+  // captureContactFormData = (newMessage) =>{
+    
+  // }
+
+
   render(){
     return (
       <div className="App">

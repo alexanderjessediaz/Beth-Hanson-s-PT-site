@@ -23,6 +23,10 @@ handleChange = (event) => {
   })
 }
 
+handleSubmit = (event) => {
+  event.preventDefault()
+}
+
 render(){
   return(
       <div>
@@ -35,7 +39,7 @@ render(){
               <Modal.Title>Can't wait to hear from you</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                <Form>
+                <Form onSubmit={this.handleSubmit}>
                   <Form.Group>
                     <Form.Label>Name</Form.Label>
                     <Form.Control
