@@ -2,6 +2,7 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 import Button from 'react-bootstrap/Button'
+import ModalComponent from './ModalComponent'
 
 const FAQ = () => {
     return (
@@ -60,7 +61,7 @@ const FAQ = () => {
                         <p>
                         A:<br/>
                             {''}
-                                Please <Button variant="secondary" size="sm">CONTACT ME</Button> to see where I am currently accepting clients &amp; for rate information
+                                <ModalComponent/> to see where I am currently accepting clients &amp; for rate information
                             {''}
                         </p>     
                     </blockquote> 

@@ -4,10 +4,7 @@ import Card from 'react-bootstrap/Card'
 import Carousel from 'react-bootstrap/Carousel'
 import Row  from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import BethLogo from '../Images/BethLogo.png'
-import BethCaroP1 from '../Images/BethCaroP1.jpg'
-import BethCaroP2 from '../Images/BethCaroP2.jpg'
-import { Media } from 'react-bootstrap'
+
 
 
 const WelcomeSection = () => {

@@ -4,8 +4,7 @@ import WelcomeSection from "./Components/WelcomeSection"
 import WelcomeJumbo from "./Components/WelcomeJumbo"
 import ServicesContainer from "./Components/ServicesContainer"
 import ServicesDivide from "./Components/ServicesDivide"
-import ModalComponent from "./Components/ModalComponent"
-// import Contact from "./Components/Contact"
+import Contact from "./Components/Contact"
 import FAQDivide from "./Components/FAQDivide"
 import FAQ from "./Components/FAQ"
 
@@ -31,7 +30,7 @@ class App extends Component {
         <WelcomeJumbo/>
         <ServicesDivide/>
         <ServicesContainer/>
-        <ModalComponent/>
+        <Contact/>
         <FAQDivide/>
         <FAQ/>
       </div>
