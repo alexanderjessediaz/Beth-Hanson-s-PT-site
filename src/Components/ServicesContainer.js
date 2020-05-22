@@ -15,7 +15,7 @@ const ServicesContainer = () => {
         <Container fluid>
                     <Accordion >
                         <Card>
-                            <Card.Header className="d-flex justify-content-center">
+                            <Card.Header className="d-flex justify-content-center ">
                                 <AccordionToggle as={Button} variant="primary" size="lg" eventKey="0">
                                     Training
                                 </AccordionToggle>
@@ -71,7 +71,7 @@ const ServicesContainer = () => {
                         <Card>
                             <Card.Header className="d-flex justify-content-center">
                                 <AccordionToggle as={Button} variant="secondary" size="lg" eventKey="2">
-                                    Little Brother Run Club
+                                    Little Brother Brewing Run Club
                                 </AccordionToggle>
                             </Card.Header>
                             <AccordionCollapse eventKey="2">

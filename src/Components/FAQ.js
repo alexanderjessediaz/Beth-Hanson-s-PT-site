@@ -8,7 +8,7 @@ const FAQ = () => {
     return (
         <CardDeck>
             <Card bg="secondary" text="light">
-                <Card.Header >Q:<br/> "I’ve never worked with a personal trainer before. What should I expect?"</Card.Header>
+                <Card.Header >Q: "I’ve never worked with a personal trainer before. What should I expect?"</Card.Header>
                 <Card.Body>
                     <blockquote className="blockquote mb-0">
                         <p>
@@ -61,7 +61,8 @@ const FAQ = () => {
                         <p>
                         A:<br/>
                             {''}
-                                <ModalComponent/> to see where I am currently accepting clients &amp; for rate information
+                            to see where I am currently accepting clients &amp; for rate information:
+                            <ModalComponent/>
                             {''}
                         </p>     
                     </blockquote> 
