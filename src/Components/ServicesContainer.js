@@ -31,7 +31,7 @@ class ServicesContainer extends Component {
                                                 your comfort level. Available in 30, 45 or 60 minute blocks, a one on one
                                                 ensures all eyes are on you and your goals. Available online &amp; in person.
                                             </p> 
-                                            <Button variant="primary" size="sm">{<Link to="/SchedulingPage"> Schedule a one on one appointment today! </Link>}</Button>
+                                            {<Link to="/SchedulingPage"><Button variant="primary" size="sm">Schedule an appointment today!</Button></Link>}
                                             
                                             <hr class="my-4"></hr>
                                             <h4>Small Group Training: <br/></h4> 
@@ -58,7 +58,7 @@ class ServicesContainer extends Component {
                                                 outer limits of your current range of motion. Appropriate for anyone comfortable
                                                 sitting on the floor.
                                             </p>
-                                            <Button variant="success" size="sm">Schedule an appointment today!</Button>
+                                            {<Link to="/SchedulingPage"><Button variant="success" size="sm">Schedule an appointment today!</Button></Link>}
                                             <hr class="my-4"></hr>
                                             <h4>Coffee &amp; CARs: <br/></h4>
                                             <p>
@@ -66,7 +66,7 @@ class ServicesContainer extends Component {
                                                 accountable. Nourish every joint in your body while you sip your morning coffee.
                                                 Available online &amp; in person.
                                             </p> 
-                                            <Button variant="success" size="sm">Schedule an appointment today!</Button>
+                                            {<Link to="/SchedulingPage"><Button variant="success" size="sm">Schedule an appointment today!</Button></Link>}
                                         </Card.Body>
                                     </AccordionCollapse>
                                 </Card>
@@ -84,7 +84,14 @@ class ServicesContainer extends Component {
                                                 Join me every Tuesday at 6p rain or shine for the only FREE run club with a
                                                 coach in town. Incentives include free beer &amp; LBB swag for members.
                                             </p>
-                                            <Button variant="secondary" size="sm">Click here for more details</Button>
+                                            <Button 
+                                                variant="secondary" 
+                                                size="sm" 
+                                                onClick={() =>
+                                                     window.open("https://www.littlebrotherbrew.com/littlebrotherbrew-events/2018/4/17/run-club-tuesdays", "_blank"
+                                                     )}
+                                                >Schedule an appointment today!
+                                            </Button>
                                         </Card.Body>
                                     </AccordionCollapse>
                                 </Card>
