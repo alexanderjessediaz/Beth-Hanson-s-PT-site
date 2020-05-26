@@ -7,6 +7,8 @@ import ServicesDivide from "./Components/ServicesDivide"
 import Contact from "./Components/Contact"
 import FAQDivide from "./Components/FAQDivide"
 import FAQ from "./Components/FAQ"
+import SchedulingPage from './Components/SchedulingPage'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -16,24 +18,25 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 class App extends Component {
 
-
-  // captureContactFormData = (newMessage) =>{
-    
-  // }
-
-
   render(){
     return (
-      <div className="App">
-        <MainNavbar />
-        <WelcomeSection />
-        <WelcomeJumbo/>
-        <ServicesDivide/>
-        <ServicesContainer/>
-        <Contact/>
-        <FAQDivide/>
-        <FAQ/>
-      </div>
+      <Router>
+        <div className="App">
+          <MainNavbar />
+          <Route exact path="/">
+          <WelcomeSection />
+          <WelcomeJumbo/>
+          <ServicesDivide/>
+          <ServicesContainer/>
+          <Contact/>
+          <FAQDivide/>
+          <FAQ/>
+          </Route>
+        <Switch>
+          <Route exact path="/SchedulingPage" component={SchedulingPage}/>
+        </Switch>
+        </div>
+      </Router>
     );
   }
 }
