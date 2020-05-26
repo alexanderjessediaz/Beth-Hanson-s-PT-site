@@ -12,10 +12,10 @@ const MainNavbar = () => {
                 <img alt='' src={BethNavLogo}/>
             </Navbar.Brand>
             <Nav className="mr-auto">
-            <Nav.Link href="#"><img src={Instagram} alt="instagram"/></Nav.Link>
+            <Nav.Link href="https://www.instagram.com/trainer.b/"><img src={Instagram} alt="instagram"/></Nav.Link>
             </Nav>
             <Nav className="mr-sm-2">
-                <Nav.Link href="#" >Home</Nav.Link>
+                <Nav.Link href="http://localhost:3000/" >Home</Nav.Link>
                 <Nav.Link href="#">About</Nav.Link>
                 <Nav.Link href="#">Contact</Nav.Link>
                 <Nav.Link href="#">Services</Nav.Link>
