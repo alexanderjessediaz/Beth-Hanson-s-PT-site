@@ -47,8 +47,13 @@ const FAQ = () => {
                                 A movement class centered on active mobility. Explore the outer limits of your
                                 current range of motion. Appropriate for anyone comfortable sitting on the floor.
                                 <br/>
-                                <Button variant="success" size="sm">FIND OUT MORE</Button>
-                                
+                                <Button 
+                                    variant="success"
+                                    size="sm"
+                                    onClick={() =>
+                                        window.open("https://kinstretch.com/", "_blank"
+                                        )}
+                                >FIND OUT MORE</Button>
                             {''}
                         </p>    
                     </blockquote> 

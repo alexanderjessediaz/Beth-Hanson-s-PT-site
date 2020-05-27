@@ -90,8 +90,7 @@ class ServicesContainer extends Component {
                                                 onClick={() =>
                                                      window.open("https://www.littlebrotherbrew.com/littlebrotherbrew-events/2018/4/17/run-club-tuesdays", "_blank"
                                                      )}
-                                                >Schedule an appointment today!
-                                            </Button>
+                                            >Find out more here!</Button>
                                         </Card.Body>
                                     </AccordionCollapse>
                                 </Card>
