@@ -4,6 +4,10 @@ import Card from 'react-bootstrap/Card'
 import Carousel from 'react-bootstrap/Carousel'
 import Row  from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import BethCaroimg from '../Images/BethCaroimg.jpg'
+import BethCaroLBBShirt from '../Images/BethCaroLBBShirt.jpg'
+import BethCaroGroupPhoto from '../Images/BethCaroGroupPhoto.jpg'
+import BethLogo from '../Images/BethLogo.png'
 
 
 
@@ -11,12 +15,13 @@ const WelcomeSection = () => {
     return (
     <Container fluid>
         <Row className="d-flex justify-content-around align-items-center">
-            <Col xl={3}>
-            <Card border="dark" style={{ width: '30rem'}}>
-                <Card.Body>
+            <Col md={1}>
+            <Card border="light" style={{ width: '25em'}} className="text-lg-center">
+                <Card.Img variant="top" src={BethLogo}/>
+                <Card.Body >
                         <Card.Title as="h1">Simple Movement. Lasting Change.</Card.Title>
                         <Card.Text>
-                            Discover the difference having a coach makes. Movement is nutrition for the body, mind & spirit. I prescribe movements that benefit your individual needs the most. I am committed to helping normal people and their bodies navigate life effectively and free of pain through implementation of scientifically sound programming and assessments.
+                            Discover the difference having a coach makes. Movement is nutrition for the body, mind &amp; spirit.<br></br> <br/> I prescribe movements that benefit your individual needs the most.<br></br> <br/> I am committed to helping normal people and their bodies navigate life effectively and free of pain through implementation of scientifically sound programming and assessments.
                         </Card.Text>
                     </Card.Body>
                 </Card>
@@ -26,25 +31,31 @@ const WelcomeSection = () => {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="https://instagram.fapa1-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/80373606_163548198211357_3677959916380993678_n.jpg?_nc_ht=instagram.fapa1-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=Ph9kX9DzaJoAX_rCVwy&oh=1f03e4acb54a25d5ee4dcde8ae724e09&oe=5EE79FD4"
-                        
+                        src={BethCaroimg}
                         alt="First slide"
                         />
-                        <Carousel.Caption>
-                            <h3>optional caption</h3>
-                            <p>text</p>
+                        <Carousel.Caption text="muted" >
+                            <h3>one on one training</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="https://instagram.fapa1-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/73455942_2313137928792383_2863290845105710515_n.jpg?_nc_ht=instagram.fapa1-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=zjenkpAQ0VAAX85EIIw&oh=01cd050d23d095e5a987bcca3990f75e&oe=5EE8BB6B"
-                        
+                        src={BethCaroLBBShirt}
                         alt="Second slide"
                         />
+                        <Carousel.Caption text="muted">
+                            <h3>LBB Run Club</h3>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                        className="d-block w-100"
+                        src={BethCaroGroupPhoto}
+                        alt="third slide"
+                        />
                         <Carousel.Caption>
-                            <h3>optional caption</h3>
-                            <p>text</p>
+                            <h3>Group training available</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

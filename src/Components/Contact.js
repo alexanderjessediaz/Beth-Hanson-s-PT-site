@@ -11,7 +11,6 @@ const Contact = () => {
             <Row>
                 <Col>
                     <Card className="text-center">
-                        <Card.Header as="h2">Contact Me</Card.Header>
                         <Card.Body>
                             <Card.Text>
                                 I’m proud to train at DownTown Fitness on Elm at 610 N. Elm St. A private studio located in

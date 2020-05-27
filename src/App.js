@@ -8,6 +8,7 @@ import Contact from "./Components/Contact"
 import FAQDivide from "./Components/FAQDivide"
 import FAQ from "./Components/FAQ"
 import SchedulingPage from './Components/SchedulingPage'
+import ContactDivide from './Components/ContactDivide'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 
@@ -28,6 +29,7 @@ class App extends Component {
           <WelcomeJumbo/>
           <ServicesDivide/>
           <ServicesContainer/>
+          <ContactDivide/>
           <Contact/>
           <FAQDivide/>
           <FAQ/>

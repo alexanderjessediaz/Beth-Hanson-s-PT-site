@@ -5,7 +5,6 @@ import Card from 'react-bootstrap/Card'
 import Accordion from 'react-bootstrap/Accordion'
 import { AccordionToggle, AccordionCollapse } from 'react-bootstrap'
 import ModalComponent from './ModalComponent'
-import SchedulingPage from './SchedulingPage'
 import { Link } from 'react-router-dom'
 
 

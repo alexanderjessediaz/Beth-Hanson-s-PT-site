@@ -1,10 +1,26 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
+// import sgMail from '@sendgrid/mail'
+// import Sendgrid from './Sendgrid'
+import axios from 'axios'
+
+export const sendEmail = async (data) => axios ({
+    method: 'POST',
+    url: '/email',
+    data
+})
+
+
+const sendRequestDemoEmail = async (emailMessage) => {
+  return await sendEmail(emailMessage)
+}
+
+
 
 class ModalComponent extends Component {
-
+  
 state = {
   showHide: false,
   name:"",
@@ -25,6 +41,7 @@ handleChange = (event) => {
 
 handleSubmit = (event) => {
   event.preventDefault()
+  sendRequestDemoEmail()
 }
 
 render(){
@@ -77,7 +94,7 @@ render(){
               <Button variant="secondary" onClick={() => this.handleModalShowHide()}>
                   Close
               </Button>
-              <Button variant="primary" onClick={() => this.handleModalShowHide()}>
+              <Button variant="primary" onClick={() => this.handleSubmit()}>
                   Send Message
               </Button>
               </Modal.Footer>
