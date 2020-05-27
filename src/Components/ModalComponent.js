@@ -4,18 +4,18 @@ import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
 // import sgMail from '@sendgrid/mail'
 // import Sendgrid from './Sendgrid'
-import axios from 'axios'
+import Axios from 'axios'
 
-export const sendEmail = async (data) => axios ({
-    method: 'POST',
-    url: '/email',
-    data
-})
+// export const sendEmail = async (data) => axios ({
+//     method: 'POST',
+//     url: 'localhost:9000/api/email',
+//     data
+// })
 
 
-const sendRequestDemoEmail = async (emailMessage) => {
-  return await sendEmail(emailMessage)
-}
+// const sendRequestDemoEmail = async (emailMessage) => {
+//   return await sendEmail(emailMessage)
+// }
 
 
 
@@ -40,8 +40,32 @@ handleChange = (event) => {
 }
 
 handleSubmit = (event) => {
-  event.preventDefault()
-  sendRequestDemoEmail()
+  // event.preventDefault();
+  console.log(event)
+  this.setState({
+    disabled: true
+  })
+  
+  Axios.post('http://localhost:9000/api/email', this.state)
+    .then(res => {
+      if(res.data.success) {
+        this.setState({
+          disabled:false,
+          emailSent:true
+        })
+      } else {
+        this.setState({
+          disabled: false,
+          emailSent: false
+        })
+      }
+    })
+    .catch( err => {
+      this.setState({
+        disabled: false,
+        emailSent: false
+      })
+    })
 }
 
 render(){
