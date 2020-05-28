@@ -18,7 +18,7 @@ const WelcomeJumbo = () => {
                 <Media.Body>
                     <h2>About Beth</h2>
                     <p>
-                        Movement is nutrition for the body, mind &amp; spirit. I prescribe movements that benefit your individual needs the most. I am committed to helping normal people and their bodies navigate life effectively and free of pain through implementation of scientifically sound programming and assessments.  My professional interests include mobility &amp; joint health, endurance sports, general health &amp; well-being, as well as promoting health and wellness at any size, age or ability. By combining extensive knowledge of human physiology &amp; anatomy with common sense, I guarantee a safe space for growing and trying new movements and habits.
+                        Movement is nutrition for the body, mind &amp; spirit. I prescribe movements that benefit your individual needs the most. I am committed to helping normal people and their bodies navigate life effectively and free of pain through implementation of scientifically sound programming and assessments.
                     </p>
                     <br/>
                     <h2>Bio</h2>

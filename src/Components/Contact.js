@@ -10,7 +10,7 @@ const Contact = () => {
         <Container fluid>
             <Row>
                 <Col>
-                    <Card className="text-center">
+                    <Card className="text-center" border="light">
                         <Card.Body>
                             <Card.Text>
                                 I’m proud to train at DownTown Fitness on Elm at 610 N. Elm St. A private studio located in

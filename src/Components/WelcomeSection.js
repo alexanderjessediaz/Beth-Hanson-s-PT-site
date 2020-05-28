@@ -7,7 +7,8 @@ import Col from 'react-bootstrap/Col'
 import BethCaroimg from '../Images/BethCaroimg.jpg'
 import BethCaroLBBShirt from '../Images/BethCaroLBBShirt.jpg'
 import BethCaroGroupPhoto from '../Images/BethCaroGroupPhoto.jpg'
-import BethLogo from '../Images/BethLogo.png'
+// import BethLogo from '../Images/BethLogo.png'
+import HighResBethLogo from '../Images/HighResBethLogo.png'
 
 
 
@@ -17,7 +18,7 @@ const WelcomeSection = () => {
         <Row className="d-flex justify-content-around align-items-center">
             <Col md={1}>
             <Card border="light" style={{ width: '25em'}} className="text-lg-center">
-                <Card.Img variant="top" src={BethLogo}/>
+                <Card.Img variant="top" src={HighResBethLogo}/>
                 <Card.Body >
                         <Card.Title as="h1">Simple Movement. Lasting Change.</Card.Title>
                         <Card.Text>
@@ -35,7 +36,7 @@ const WelcomeSection = () => {
                         alt="First slide"
                         />
                         <Carousel.Caption text="muted" >
-                            <h3>one on one training</h3>
+                            <h3>One on One Training</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
