@@ -17,7 +17,7 @@ Stack: React, Bootstrap 4, Node.js Express, SendGrid, and Acuity
 
 Video tour of the website can found here: https://www.youtube.com/watch?v=c6nhE7YInrU
 
-features include:
+features include: <br></br>
 -scheduling appointments through acuity
 -sending Beth an email throught the contact me buttons
 -information on Kinstretch, Beth's services, and LBB run club
