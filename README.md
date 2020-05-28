@@ -19,13 +19,13 @@ Video tour of the website can found here: https://www.youtube.com/watch?v=c6nhE7
 
 features include: <br></br>
 -scheduling appointments through acuity<br>
--sending Beth an email throught the contact me buttons
+-sending Beth an email throught the contact me buttons<br>
 -information on Kinstretch, Beth's services, and LBB run club
 
 inspiration:
 Helping a family friend with their website and making it easy to use for any of her clients.
 
-Additional information about me:
-Linkedin: https://www.linkedin.com/in/alexander-jesse-diaz/
+Additional information about me:<br></br>
+Linkedin: https://www.linkedin.com/in/alexander-jesse-diaz/ <br>
 Blog: https://medium.com/@alexanderjessediaz
 
