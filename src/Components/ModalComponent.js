@@ -40,10 +40,9 @@ handleChange = (event) => {
 }
 
 handleSubmit = (event) => {
-  // event.preventDefault();
   console.log(event)
   this.setState({
-    disabled: true
+    disabled: false
   })
   
   Axios.post('http://localhost:9000/api/email', this.state)
@@ -51,7 +50,8 @@ handleSubmit = (event) => {
       if(res.data.success) {
         this.setState({
           disabled:false,
-          emailSent:true
+          emailSent:true,
+          showHide: !this.state.showHide
         })
       } else {
         this.setState({

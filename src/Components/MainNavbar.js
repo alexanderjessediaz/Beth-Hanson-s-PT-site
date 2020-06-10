@@ -20,9 +20,9 @@ const MainNavbar = () => {
             </Nav>
             <Nav className="mr-sm-2">
                 <Nav.Link href="http://localhost:3000/">Home</Nav.Link>
-                <Nav.Link href="http://localhost:3000/">Contact</Nav.Link>
-                <Nav.Link href="http://localhost:3000/">Services</Nav.Link>
-                <Nav.Link href="http://localhost:3000/">FAQ</Nav.Link>
+                <Nav.Link href="http://localhost:3000/Contact">Contact</Nav.Link>
+                <Nav.Link href="http://localhost:3000/Services">Services</Nav.Link>
+                <Nav.Link href="http://localhost:3000/FAQ">FAQ</Nav.Link>
             </Nav>
         </Navbar>
     ) 
