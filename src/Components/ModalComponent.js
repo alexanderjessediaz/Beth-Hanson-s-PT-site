@@ -2,20 +2,9 @@ import React, { Component } from 'react'
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
-// import sgMail from '@sendgrid/mail'
-// import Sendgrid from './Sendgrid'
 import Axios from 'axios'
 
-// export const sendEmail = async (data) => axios ({
-//     method: 'POST',
-//     url: 'localhost:9000/api/email',
-//     data
-// })
 
-
-// const sendRequestDemoEmail = async (emailMessage) => {
-//   return await sendEmail(emailMessage)
-// }
 
 
 
